@@ -94,6 +94,10 @@ model AzureCognitiveSearchChatExtensionConfiguration {
   @projectedName("csharp", "ShouldRestrictResultScope")
   inScope?: boolean;
 
+  @doc("The OData query filter to use when querying the Cognitive Search index.")
+  @projectedName("csharp", "Filter")
+  filter?: string;
+
   @doc("The additional semantic configuration for the query.")
   semanticConfiguration?: string;
 
